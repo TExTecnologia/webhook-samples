@@ -1,6 +1,7 @@
+# Sample Node
 node/bin
-.rsync*
-ecosystem.json
+node/.rsync*
+node/ecosystem.json
 
 # Logs
 logs
