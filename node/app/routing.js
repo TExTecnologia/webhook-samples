@@ -6,7 +6,7 @@ const crypto = require('crypto')
 const Router = require('koa-router')
 
 const router = new Router()
-const html = fs.readFileSync(path.join(__dirname, '..', '..', 'public', 'index.html'), 'utf8')
+const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'index.html'), 'utf8')
 
 function broadcast(data, wss) {
 	wss.clients.forEach(client => {
