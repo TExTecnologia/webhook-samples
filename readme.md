@@ -5,7 +5,7 @@
 [xo-img]:        https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:            https://github.com/sindresorhus/xo
 
-Exemplos de payloads
+Exemplos de APIs
 
 ## Usage
 
