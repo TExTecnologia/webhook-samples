@@ -9,11 +9,11 @@ Exemplos de payloads
 
 ## Usage
 
-Faça o download ou um clone do projeto e siga as instruções da linguagem que deseja testar
+Faça o download ou um clone do projeto e siga as instruções da linguagem que desejar
 
 ### Node
 
-Exemplo utilizando Koa + WebSocket para debug
+Exemplo utilizando [Koa](http://koajs.com/) + [WebSocket](https://websocket.org/) para debug
 
 ```shell
 cd node
