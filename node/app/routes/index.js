@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const crypto = require('crypto')
 const Router = require('koa-router')
 
 const router = new Router()
@@ -13,16 +14,33 @@ function broadcast(data, wss) {
 	})
 }
 
-function routing(app, wss) {
-	router.get('/', async (ctx, next) => {
-		ctx.body = html
-	})
+function home(ctx) {
+	ctx.body = html
+}
 
-	router.post('/payload', async (ctx, next) => {
+function payload(wss) {
+	return ctx => {
 		const d = ctx.request.body
 		broadcast(`${JSON.stringify(ctx.request.headers)}\n${JSON.stringify(d)}`, wss)
 		ctx.body = ''
-	})
+	}
+}
+
+function verifySignature(ctx, next) {
+	const signature = ctx.request.headers['x-teleport-signature']
+	const payload = JSON.stringify(ctx.request.body)
+	const hmac = crypto.createHmac('sha1', 'segredo')
+	const verify = `sha1=${hmac.update(payload).digest('hex')}`
+	if (verify === signature) {
+		return next()
+	}
+	ctx.throw(401)
+}
+
+function routing(app, wss) {
+	router.get('/', home)
+	router.post('/payload', payload(wss))
+	router.post('/payload-secure', verifySignature, payload(wss))
 
 	app
 		.use(router.routes())
