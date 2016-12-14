@@ -1,5 +1,6 @@
-.tmp
-config/*.json
+node/bin
+.rsync*
+ecosystem.json
 
 # Logs
 logs
