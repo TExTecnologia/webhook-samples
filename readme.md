@@ -38,10 +38,10 @@ Você pode utilizar o [ngrok](https://ngrok.com/download) para expor seu servido
 
 #### Teste
 
-Podemos testar via `curl`
+Via **curl**
 
 ```shell
-curl -v 'http://2740d34a.ngrok.io/payload-secure' \
+curl -v 'http://{hash-hex-gerado}.ngrok.io/payload-secure' \
 -H "Content-Type: application/json" \
 -H "X-Teleport-Signature: sha1=95ae2a828b424366bd65f856d37ec9571f559098" \
 -d '{"test":"teleport_webhook"}'
