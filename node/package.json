@@ -1,8 +1,8 @@
 {
   "name": "webhook-teleport-samples",
   "version": "1.0.0",
-  "repository": "TExTecnologia/webhook-teleport",
-  "description": "Integrações com os eventos do TELEPORT",
+  "repository": "TExTecnologia/webhook-teleport-samples",
+  "description": "Exemplos de APIs",
   "keywords": [
     "webhook",
     "example",
