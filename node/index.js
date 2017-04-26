@@ -1,9 +1,5 @@
 'use strict'
 
-require('babel-register')({
-	plugins: ['transform-async-to-generator']
-})
-
 const api = require('./app/.')
 
 const porta = process.env.PORT || 3000

@@ -7,25 +7,25 @@
 		<h1>Logs</h1>
 		<pre id="container"></pre>
 		<script type="text/javascript">
-			const container = document.querySelector('#container');
+			const container = document.querySelector('#container')
 			function printOut(event, staticMsg) {
-				const message = staticMsg || event.data;
-				const docFrag = document.createDocumentFragment();
-				const p = document.createElement('p');
-				p.appendChild(document.createTextNode(message));
-				docFrag.appendChild(p);
-				container.appendChild(docFrag);
+				const message = staticMsg || event.data
+				const docFrag = document.createDocumentFragment()
+				const p = document.createElement('p')
+				p.appendChild(document.createTextNode(message))
+				docFrag.appendChild(p)
+				container.appendChild(docFrag)
 			}
 			function onOpen(event) {
-				printOut(event, '[connected] Webhook TELEPORT Sample');
+				printOut(event, '[connected] Webhook TELEPORT Sample')
 			}
 			function onClose(event) {
-				printOut(event, '[disconnected]');
+				printOut(event, '[disconnected]')
 			}
-			const ws = new WebSocket('ws://127.0.0.1:3000');
-			ws.onopen = onOpen;
-			ws.onclose = onClose;
-			ws.onmessage = printOut;
+			const ws = new WebSocket(`ws://${window.location.host}`)
+			ws.onopen = onOpen
+			ws.onclose = onClose
+			ws.onmessage = printOut
 		</script>
 	</body>
 </html>

@@ -12,17 +12,15 @@
   "author": "Thiago Lagden",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-transform-async-to-generator": "6.16.0",
-    "babel-register": "6.18.0",
-    "kcors": "2.2.0",
-    "koa": "2.0.0-alpha.7",
+    "kcors": "2.2.1",
+    "koa": "2.2.0",
     "koa-bodyparser": "3.2.0",
     "koa-router": "7.0.1",
-    "ws": "1.1.1"
+    "ws": "2.3.1"
   },
   "devDependencies": {
     "nodemon": "1.11.0",
-    "xo": "0.17.1"
+    "xo": "0.18.1"
   },
   "scripts": {
     "start": "NODE_ENV=dev nodemon index.js"
