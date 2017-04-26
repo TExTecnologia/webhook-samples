@@ -5,8 +5,7 @@
   "description": "Integrações com os eventos do TELEPORT",
   "keywords": [
     "webhook",
-    "notification",
-    "dispatches",
+    "example",
     "TELEPORT"
   ],
   "author": "Thiago Lagden",
@@ -15,15 +14,13 @@
     "kcors": "2.2.1",
     "koa": "2.2.0",
     "koa-bodyparser": "3.2.0",
-    "koa-router": "7.0.1",
-    "ws": "2.3.1"
+    "koa-router": "7.0.1"
   },
   "devDependencies": {
-    "nodemon": "1.11.0",
     "xo": "0.18.1"
   },
   "scripts": {
-    "start": "NODE_ENV=dev nodemon index.js"
+    "start": "node index.js"
   },
   "xo": {
     "envs": [
@@ -31,8 +28,5 @@
     ],
     "semicolon": false
   },
-  "main": "index.js",
-  "files": [
-    "app"
-  ]
+  "main": "index.js"
 }

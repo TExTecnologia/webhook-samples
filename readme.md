@@ -10,12 +10,22 @@ Faça o download ou um clone do projeto e siga as instruções da linguagem que 
 
 ### Node
 
-Exemplo utilizando [Koa](http://koajs.com/) + [WebSocket](https://websocket.org/) para debug
+Exemplo utilizando [Koa](http://koajs.com/)
 
 ```shell
 cd node
 npm i
 npm start
+```
+
+### Ruby
+
+Exemplo utilizando [Sinatra](http://www.sinatrarb.com/)
+
+```shell
+cd ruby
+bundle install
+ruby server.rb
 ```
 
 ### ngrok
