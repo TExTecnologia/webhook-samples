@@ -1,11 +1,4 @@
-# Sample Node
-node/bin
-node/.rsync*
-node/ecosystem.json
-
-
-
-
+### Node
 # Logs
 logs
 *.log
@@ -53,6 +46,7 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
+
 
 ### Ruby
 *.gem

@@ -5,7 +5,7 @@ Exemplos de APIs
 
 ## Usage
 
-Faça o download ou um clone do projeto e siga as instruções da linguagem que desejar
+Faça o download ou um clone do projeto e siga as instruções abaixo
 
 
 ### Node
@@ -30,7 +30,7 @@ ruby server.rb
 
 ### ngrok
 
-Você pode utilizar o [ngrok](https://ngrok.com/download) para expor seu localhost para a internet
+Você pode utilizar o [ngrok](https://ngrok.com/download) para expor seu servidor local para a internet
 
 ```shell
 ./ngrok http 3000
