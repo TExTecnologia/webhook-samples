@@ -1,4 +1,4 @@
-# Webhook TELEPORT Sample 
+# Webhook TELEPORT Samples
 
 Exemplos de APIs
 
