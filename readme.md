@@ -28,15 +28,15 @@ bundle install
 ruby server.rb
 ```
 
-### ngrok
+### ngrok (para testes)
 
-Você pode utilizar o [ngrok](https://ngrok.com/download) para expor seu servidor local para a internet
+Você pode utilizar o [ngrok](https://ngrok.com/download) para expor sua maquina local para a internet
 
 ```shell
 ./ngrok http 3000
 ```
 
-#### Teste
+#### Exemplo utilizando o ngrok
 
 Via **curl**
 
