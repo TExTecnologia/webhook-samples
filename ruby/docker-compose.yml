@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  api:
+    build:
+      context: ./
+      args:
+        port: ${PORT:-3000}
+    image: webhook_api_example_rb:dev
+    command: ["ruby", "server.rb", "-o", "0.0.0.0"]
+    ports:
+      - 3132:${PORT:-3000}
+    volumes:
+      - ./server.rb:/usr/src/api/server.rb
